@@ -1,0 +1,208 @@
+@font-face {
+    font-family: 'Source Sans Pro';
+    src: url(../fonts/SourceSansPro-Regular.ttf);
+}
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+.fundo-menu{
+    background-color: #00cad1;
+    height: 60px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.conteiner-menu{
+    display: flex;
+    width: 1024px;
+    max-width: 100%;
+    justify-content: space-between;
+    align-items: center;
+}
+.logo-topo img{
+    margin-top: 5px;
+    width: 150px;
+}
+.menu-topo a{
+    text-decoration: none;
+    font-size: 20px;
+    margin: 0 10px;
+    color: white;
+}
+.menu-topo a:hover{
+    color: black;
+}
+.conteiner-meio{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+    color: #0000008c;   
+}
+.box-meio{
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+    align-items: center; 
+    max-width: 1024px;
+    width: 100%; 
+}
+.navegacao{
+    display: flex;
+    justify-content: space-between;
+    max-width: 550px;
+    width: 100%;
+}
+.navegacao a{
+    font-size: 20px;
+    color: #0000008c;
+    font-weight: bold;
+    text-decoration: none;
+    border-bottom: solid 2px #00cad1;
+}
+.navegacao a:hover{
+    color: #3d7b89;
+}
+.tit-nav{
+    margin: 25px;
+}
+.tit-nav p{
+    font-size: 25px;
+    font-weight: bold;
+}
+tbody tr:nth-of-type(2n+1){
+    background-color: #cdcdcd;
+}
+tbody tr:nth-last-of-type(2n+2){
+    background-color: #f1f1f1;
+}
+tr td, tr th{
+    text-align: left;
+    padding-left: 5px;
+}
+tr th{
+    background-color: #00cad1;
+}
+
+.conteudo-box1,.conteudo-box2,.conteudo-box3,.conteudo-box4,.conteudo-box5{
+    display: flex;
+    flex-direction: column;
+    max-width: 1024px;
+    width: 100%;
+    align-items: center;
+}
+#info-box1,#info-box2,#info-box3,#info-box4,#info-box5{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 550px;
+    width: 100%;
+}
+.titulo-espec,.titulo-espec2,.titulo-espec3,.titulo-espec4,.titulo-espec5{
+    font-size: 18px;
+    color: #0000008c;
+    font-weight: bold;
+    margin: 10px;
+}
+.info-espec,.info-espec2,.info-espec3,.info-espec4,.info-espec5{
+    text-align: center;
+    margin: 10px 0px 20px;
+}
+.sobre-box1,.sobre-box2,.sobre-box3,.sobre-box4,.sobre-box5{
+    display: flex;
+    width: 100%;
+}
+.img-tab img,.img-tab2 img,.img-tab3 img,.img-tab4 img{
+    width: 300px;
+}
+.img-tab5 img{
+    width: 300px;
+    height: 200px;
+}
+.tab-box1,.tab-box2,.tab-box3,.tab-box4,.tab-box5{
+    width: 100%;
+    height: 200px;
+}
+
+table{
+    height: 200px;
+    width: 100%;
+}
+thead{
+    height: 32px;
+}
+#rodape{
+    background-color: #0c6e71;
+    height: 330px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 40px;
+}
+.conteiner-rodape{
+    display: flex;
+    width: 100%;
+    max-width: 1024px;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    color: white;
+    font-size: 19px;
+}
+.p-rodape p{
+    margin: 25px 0;
+    text-align: center;
+}
+table{
+    border-collapse: collapse;
+}
+
+
+@media (min-width: 320px) and (max-width: 425px){
+    .fundo-menu{
+        height: auto; 
+    }
+    .fundo-conteudo{
+        height: auto;
+    }
+    .conteiner-menu{
+        flex-direction: column;
+    }
+    .logo-topo img{
+        width: 100px;
+    }
+    .menu-topo{
+        margin-bottom: 10px;
+        border-top: 1px solid #00a5ab;
+    }
+    .menu-topo a{
+        margin: 0 12px;
+    }
+    .img-tab img, .img-tab2 img, .img-tab3 img, .img-tab4 img, .img-tab5 img{
+        display: none;
+    }
+    .navegacao{
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .navegacao a{
+        margin: 2px;
+    }
+    .sobre-box1,.sobre-box2,.sobre-box3,.sobre-box4,.sobre-box5{
+        margin-bottom: 20px;
+    }
+    .tit-nav p{
+        text-align: center;
+    }
+
+}
+
+@media (min-width: 426px) and (max-width: 768px){
+    .img-tab img, .img-tab2 img, .img-tab3 img, .img-tab4 img, .img-tab5 img{
+        display: none;
+    }
+
+}
